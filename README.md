@@ -1,4 +1,3 @@
-````markdown
 # 💬 Real-Time Chat Application using Spring Boot WebSocket
 
 A simple yet powerful real-time chat application built using **Spring Boot**, **WebSocket**, **STOMP Protocol**, and **SockJS**.  
@@ -61,7 +60,7 @@ src
 │       │   ├── js
 │       │   └── index.html
 │       └── application.properties
-````
+```
 
 ---
 
@@ -143,8 +142,8 @@ accessor.getSessionAttributes().put("username", message.getSender());
 
 When a user disconnects:
 
-* LEAVE event is generated
-* Notification broadcasted to all users
+- LEAVE event is generated
+- Notification broadcasted to all users
 
 ---
 
@@ -152,8 +151,8 @@ When a user disconnects:
 
 ## Prerequisites
 
-* Java 17+ (or compatible version)
-* Maven
+- Java 17+ (or compatible version)
+- Maven
 
 ---
 
@@ -171,28 +170,37 @@ cd chat-application-websocket
 ```bash
 mvn spring-boot:run
 ```
+
+---
+
+## Open in Browser
+
+```text
+http://localhost:8080
+```
+
 ---
 
 # 📌 Important Endpoints
 
-| Endpoint                | Description                   |
-| ----------------------- | ----------------------------- |
-| `/ws`                   | WebSocket connection endpoint |
-| `/app/chat.sendMessage` | Send chat message             |
-| `/app/chat.addUser`     | Add user to chat              |
-| `/topic/public`         | Public message subscription   |
+| Endpoint | Description |
+|----------|-------------|
+| `/ws` | WebSocket connection endpoint |
+| `/app/chat.sendMessage` | Send chat message |
+| `/app/chat.addUser` | Add user to chat |
+| `/topic/public` | Public message subscription |
 
 ---
 
 # 🧩 Core Concepts Used
 
-* WebSocket Protocol
-* STOMP Messaging
-* Publish-Subscribe Model
-* Event-Driven Architecture
-* Real-Time Broadcasting
-* Session Management
-* Frontend WebSocket Integration
+- WebSocket Protocol
+- STOMP Messaging
+- Publish-Subscribe Model
+- Event-Driven Architecture
+- Real-Time Broadcasting
+- Session Management
+- Frontend WebSocket Integration
 
 ---
 
@@ -200,24 +208,22 @@ mvn spring-boot:run
 
 This project helps in understanding:
 
-* How WebSockets work internally
-* Real-time communication in Spring Boot
-* STOMP messaging architecture
-* Client-server event handling
-* Live broadcasting systems
-* Session-based user tracking
+- How WebSockets work internally
+- Real-time communication in Spring Boot
+- STOMP messaging architecture
+- Client-server event handling
+- Live broadcasting systems
+- Session-based user tracking
 
 ---
 
 # 🚀 Future Enhancements
 
-* 🔐 Authentication & Authorization
-* 💾 Message persistence using Database
-* 👤 Private messaging
-* 🟢 Online users list
-* 📱 Responsive UI improvements
-* ☁️ Deployment using Docker & Cloud
-* 🔔 Typing indicators
-* 📎 File sharing support
-
----
+- 🔐 Authentication & Authorization
+- 💾 Message persistence using Database
+- 👤 Private messaging
+- 🟢 Online users list
+- 📱 Responsive UI improvements
+- ☁️ Deployment using Docker & Cloud
+- 🔔 Typing indicators
+- 📎 File sharing support
